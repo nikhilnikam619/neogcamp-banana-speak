@@ -5,6 +5,7 @@
 
 let btnTranslet = document.querySelector("#btn-translet")
 let txtinput = document.querySelector("#btn-input")
+let output = document.querySelector("#output")
 
 
 
@@ -12,6 +13,9 @@ function clickHandler() {
 
     console.log("clicked");
     console.log("input", txtinput.value);
+    output.innerText = txtinput.value;
+
+
 }
 
 

@@ -6,36 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Banana Speak</title>
 
+    <link href="style.css" rel="stylesheet">
 
-    <style>
-        textarea {
-            width: 40%;
-            height: 100px;
-            display: block;
-            margin: 1rem;
-            padding: 1rem;
-        }
-
-        #output {
-            border: 2px solid black;
-            height: 10vh;
-            width: 80%;
-            margin: 1rem;
-            padding: 1rem;
-        }
-    </style>
 
 </head>
 
 <body>
-    <h1>Banana Talk</h1>
 
-    <textarea placeholder="put ur input" id="btn-input"></textarea>
-    <br>
-    <button class="clbtn" id="btn-translet">click</button>
-    <div style="font-size: larger;">output will be here 👇</div>
-    <div id="output"></div>
+    <main>
+        <header id="head">
+            <h1>Banana Talk</h1>
+        </header>
 
+        <article id="art1">
+            <textarea placeholder="Please Enter Here" id="btn-input"></textarea>
+            <br>
+            <button class="clbtn" id="btn-translet">TRANSLET</button>
+        </article>
+        <article id="art2">
+            <div style="font-size: larger;"><B>Trasnlation will come here </B> 👇</div>
+            <div id="output"></div>
+        </article>
+
+
+    </main>
     <script src="app.js" type="text/Javascript"></script>
 
 

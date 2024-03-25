@@ -23,21 +23,36 @@ function errorhandler(error) {
 
 function clickHandler() {
 
+
+    if (txtinput.value == "") {
+
+        alert("please enter");
+
+
+    }
+
+
+    else {
+
+        alert("Please wait...");
+        let inputtext = txtinput.value;
+
+        fetch(gettranslationurl(inputtext))
+            .then(response => response.json())
+            .then(json => {
+                let translatedtxt = json.contents.translated;
+
+                output.innerText = translatedtxt;
+
+            })
+            .catch(errorhandler)
+
+    }
     // console.log("clicked");
     //console.log("input", txtinput.value);
     //output.innerText = txtinput.value;
 
-    let inputtext = txtinput.value;
 
-    fetch(gettranslationurl(inputtext))
-        .then(response => response.json())
-        .then(json => {
-            let translatedtxt = json.contents.translated;
-
-            output.innerText = translatedtxt;
-
-        })
-        .catch(errorhandler)
 
 
 

@@ -1,0 +1,81 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html,
+body {
+
+    height: 100%;
+    width: 100%;
+
+}
+
+
+textarea {
+    width: 40%;
+    height: 100px;
+    display: block;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+#output {
+    border: 2px solid black;
+    height: 10vh;
+    width: 80%;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+#head {
+
+    height: 100px;
+    width: 100%;
+    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#art1 {
+
+    height: 300px;
+    width: 100%;
+    margin: 0%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+#art1>#btn-input {
+
+    border-color: rgb(0, 42, 255);
+}
+
+#art1>.clbtn {
+
+    width: 200px;
+    height: 40px;
+    background-color: yellow;
+    position: relative;
+}
+
+#art2 {
+
+    height: 300px;
+    width: 100%;
+    margin: 0%;
+
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+
+}

@@ -61,10 +61,12 @@ textarea {
 
 #art1>.clbtn {
 
-    width: 200px;
+    width: 150px;
     height: 40px;
-    background-color: yellow;
+    background-color: rgb(208, 255, 0);
+    border: rgb(93, 0, 255);
     position: relative;
+    border-radius: 30px;
 }
 
 #art2 {
@@ -77,5 +79,18 @@ textarea {
     align-items: center;
     justify-content: start;
     flex-direction: column;
+
+}
+
+#foot {
+
+    height: 200px;
+    width: 100%;
+    background-color: brown;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
 
 }

@@ -10,9 +10,9 @@ let output = document.querySelector("#output")
 //let url1 = "https://api.funtranslations.com/translate/yoda.json/"
 
 let url = "https://api.funtranslations.com/translate/minion.json"
-function gettranslationurl(text) {
+function gettranslationurl(input) {
 
-    return url + "?" + "text=" + text
+    return url + "?" + "text=" + input
 
 }
 
